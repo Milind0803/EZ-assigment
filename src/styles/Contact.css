@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&display=swap");
+
+.contact {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(#fdd0c1 1px, transparent 1px) 0 0/6px 6px,
+    radial-gradient(#fdd0c1 1px, transparent 1px) 3px 3px/6px 6px,
+    #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px 40px;
+}
+.contact { scroll-margin-top: 140px; }
+
+
+
+.contact__container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact__left {
+  position: relative;
+  text-align: center;
+}
+
+.contact__mandala3 {
+  position: absolute;
+  top: -200px;
+  left: 1000px;
+  width: 300px;
+  opacity: 1;
+}
+
+.contact__mandala4 {
+  position: absolute;
+  bottom: -240px;
+  right: 376px;
+  width: 300px;
+  opacity: 1;
+}
+ 
+.contact__logo {
+  position: absolute;
+  top: -180px;
+  left: -60px;
+  width: 130px;
+  opacity: 0.95;
+  z-index: 5;
+}
+
+
+.contact__heading {
+  font-family: "Great Vibes", cursive;
+  font-size: 48px;
+  color: #203552;
+  margin-bottom: 10px;
+}
+
+.contact__text {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 420px;
+  margin: 0 auto;
+  color: #1e1e1e;
+}
+
+.contact__right {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact__input,
+.contact__textarea {
+  padding: 12px 14px;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #f6a48d;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #1e1e1e;
+  font-size: 14px;
+}
+
+.contact__btn {
+  background-color: #cf563e;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact__btn:hover {
+  background-color: #203552;
+}
+
+@media (max-width: 900px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact__mandala3,
+  .contact__mandala4 {
+    width: 140px;
+  }
+
+  .contact__heading {
+    font-size: 40px;
+  }
+}

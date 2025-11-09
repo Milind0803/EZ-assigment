@@ -1,0 +1,152 @@
+.portfolio {
+  position: relative;
+  padding: 80px 0 100px;
+  background:
+    radial-gradient(#fdd0c1 1px, transparent 1px) 0 0/6px 6px,
+    radial-gradient(#fdd0c1 1px, transparent 1px) 3px 3px/6px 6px,
+    #fff;
+  text-align: center;
+}
+
+.portfolio { scroll-margin-top: 2px; }
+
+
+.portfolio__logoTopLeft {
+  position: absolute;
+  top: 20px;
+  left: 28px;
+  width: 130px;
+  opacity: 0.95;
+  z-index: 5;
+}
+
+.portfolio__title {
+  font: 400 28px/1.2 Inter, system-ui, Arial;
+  color: #203552;
+  margin-bottom: 8px;
+}
+
+.portfolio__subtitle {
+  font: 400 15px/1.6 Inter, system-ui, Arial;
+  color: #55637a;
+  margin-bottom: 36px;
+}
+
+.portfolio__reel {
+  position: relative;
+  width: 600px;
+  max-width: 90%;
+  margin: 40px auto 0;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__frame {
+  width: 100%;
+  display: block;
+  margin-top: 0;        
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(15, 35, 69, 0.15);
+}
+
+.portfolio__videoWrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.portfolio__panelRect {
+  position: absolute;
+  top: 18%;
+  height: 64%;
+  width: 13%;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: 1;              
+  filter: brightness(0.95);
+  pointer-events: none;
+}
+
+.portfolio__panelRect--left { left: 0%; }
+.portfolio__panelRect--right { right: 0%; }
+.portfolio__panelVector {
+  position: absolute;
+  top: 50%;
+  height: 30%;
+  width: 7%;
+  z-index: 2;
+  pointer-events: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  object-fit: contain;
+  mix-blend-mode: multiply;     
+  opacity: 0.95;                
+  transform: translateY(-50%);  
+}
+
+.portfolio__panelVector--left {
+  left: 1.5%;                   
+}
+
+.portfolio__panelVector--right {
+  right: 1.5%;                  
+}
+
+.portfolio__panelVector:hover {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+
+.portfolio__logoOverlay {
+  position: absolute;
+  width: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+.portfolio__cam {
+  position: absolute;
+  left: -230px;
+  bottom: 160px;
+  width: 150px;
+  opacity: 0.8;
+}
+
+.portfolio__mandala {
+  position: absolute;
+  right: -380px;          
+  bottom: -70px;         
+  width: 160px;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .portfolio__reel {
+    width: 90%;
+  }
+
+  .portfolio__cam {
+    left: -70px;
+    width: 140px;
+  }
+
+  .portfolio__mandala {
+    right: -70px;
+    width: 140px;
+  }
+
+  .portfolio__logoOverlay {
+    width: 90px;
+  }
+}
