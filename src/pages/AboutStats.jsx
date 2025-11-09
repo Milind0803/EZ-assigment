@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/AboutStats.css";
 import vlogo from "../assets/vfilms-logo.png";
 import cards from "../assets/cards.png";
-import cola from "../assets/cola.png";
+import cola from "../assets/Cola.png";
 import mountains from "../assets/mountains.png";
 
 export default function AboutStats() {
