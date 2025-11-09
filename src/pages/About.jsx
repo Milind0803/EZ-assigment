@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import vlogo from "../assets/VFilms Logo.png";
+import vlogo from "../assets/vfilms-logo.png";
 import gate from "../assets/india gate.png";
 import group9 from "../assets/Group 9.png";
 import sticky from "../assets/Group 1.png";
@@ -24,8 +24,12 @@ export default function About() {
       <img className="about__img about__fm" src={fm} alt="Film Makers" />
       <img className="about__img about__be" src={be} alt="Branding Experts" />
       <img className="about__img about__ac" src={ac} alt="Art Curators" />
-      <h2 className="about__headline">Take a closer look at the stories V bring to life.</h2>
-      <a className="about__cta" href="#portfolio">View Portfolio</a>
+      <h2 className="about__headline">
+        Take a closer look at the stories V bring to life.
+      </h2>
+      <a className="about__cta" href="#portfolio">
+        View Portfolio
+      </a>
     </section>
   );
 }

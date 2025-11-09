@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/Contact.css";
 import mandala3 from "../assets/mandala 3.0 right corner.png";
 import mandala4 from "../assets/mandala 4.0 left corner.png";
-import vfilmsLogo from "../assets/VFilms Logo.png";
+import vfilmsLogo from "../assets/vfilms-logo.png";
 
 export default function Contact() {
   const [form, setForm] = useState({

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Portfolio.css";
-import vlogo from "../assets/VFilms Logo.png";
+import vlogo from "../assets/vfilms-logo.png";
 import frame from "../assets/frame.jpg";
 import camGroup from "../assets/Cam Group.png";
 import mandala from "../assets/mandala 2.0.png";
@@ -18,10 +18,26 @@ export default function Portfolio() {
       <div className="portfolio__reel">
         <img src={frame} alt="Film Frame" className="portfolio__frame" />
         <div className="portfolio__videoWrapper">
-          <img src={rectLeft} alt="" className="portfolio__panelRect portfolio__panelRect--left" />
-          <img src={vector10} alt="" className="portfolio__panelVector portfolio__panelVector--left" />
-          <img src={rectRight} alt="" className="portfolio__panelRect portfolio__panelRect--right" />
-          <img src={vector9} alt="" className="portfolio__panelVector portfolio__panelVector--right" />
+          <img
+            src={rectLeft}
+            alt=""
+            className="portfolio__panelRect portfolio__panelRect--left"
+          />
+          <img
+            src={vector10}
+            alt=""
+            className="portfolio__panelVector portfolio__panelVector--left"
+          />
+          <img
+            src={rectRight}
+            alt=""
+            className="portfolio__panelRect portfolio__panelRect--right"
+          />
+          <img
+            src={vector9}
+            alt=""
+            className="portfolio__panelVector portfolio__panelVector--right"
+          />
           <img src={camGroup} alt="" className="portfolio__cam" />
           <img src={mandala} alt="" className="portfolio__mandala" />
         </div>
